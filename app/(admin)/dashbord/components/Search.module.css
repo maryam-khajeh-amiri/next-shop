@@ -1,0 +1,25 @@
+
+.dashbord_search input{
+    text-align: right;
+    width: 1140px;
+    height: 68px;
+    position: fixed;
+    top: 28px;
+    left: 150px;
+    border-radius: 16px;
+    padding-right: 30px;
+}
+.searchIcon{
+    position: fixed;
+    top:55px ;
+    left:1300px ;
+}
+
+.logout{
+    position: fixed;
+    top: 55px;
+    left: 170px;
+    z-index: 22;
+    cursor: pointer;
+    
+}

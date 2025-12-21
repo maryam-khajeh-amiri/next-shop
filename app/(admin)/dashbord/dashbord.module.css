@@ -1,0 +1,55 @@
+/* 
+.dashbord_search input{
+    text-align: right;
+    width: 1140px;
+    height: 68px;
+    position: fixed;
+    top: 28px;
+    left: 150px;
+    border-radius: 16px;
+    padding-right: 30px;
+}
+.searchIcon{
+    position: fixed;
+    top:55px ;
+    left:1300px ;
+}
+
+.logout{
+    position: fixed;
+    top: 55px;
+    left: 170px;
+    z-index: 22;
+    cursor: pointer;
+    
+} */
+.dashbord{
+    display: flex;
+    justify-content: space-between;
+   
+   
+}
+.dashbord button{
+    width: 132px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    background-color: #55a3f0;
+    padding: 10px;
+     margin-top: 138px;
+     border: none;
+     cursor: pointer;
+}
+
+.dashbord_manage{
+    display: flex;
+    gap: 10px;
+  margin-top: 137px;
+}
+
+.dashbord_manage img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+

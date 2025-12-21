@@ -1,0 +1,46 @@
+.dashbord_table{
+    width: 1000px;
+    height: 737 px;
+    border-radius: 30px;
+    background-color: white;
+    border: 1px;
+    margin:  0 auto;
+    border-collapse: collapse;
+    overflow: hidden;
+  
+
+}   
+
+.dashbord_table table{
+    width: 1000px;
+    height: 200px;
+    border-radius: 30px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #f5f0f0;
+   
+    
+}
+.dashbord_table  table thead {
+    background-color: #e4e4e4;
+    width: 1240px;
+  border-radius: 30px;
+  
+}
+
+
+.dashbord_table thead th{
+    border-bottom: 1px solid #f5f0f0 ;
+    padding: 20px;
+    background-color: #e4e4e4;
+    text-align: right;
+    
+}
+
+
+.dashbord_table tbody td{
+    border-bottom: 1px solid #f5f0f0 ;
+    padding: 20px;
+   
+    text-align: right;
+}
