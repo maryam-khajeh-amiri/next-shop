@@ -33,8 +33,8 @@ const {
   totalPage,
   updateProductId,
   deletedProductId,
+  filteredProducts
 } = useProducts(token)
-
 
 
 
@@ -58,7 +58,7 @@ const {
         <button  onClick={()=>addModal()}>افزودن محصول</button>
       </div>
     
-      <Products  products={products} editModal={editModal}  deleteModal={deleteModal}/>
+      <Products  products={products} editModal={editModal}  deleteModal={deleteModal}  filteredProducts={filteredProducts}/>
       <div>
 
     <Paginate currentPage={currentPage}  setCurrentPage={setCurrentPage} totalPage={totalPage}  setTotalPage={setTotalPage}   />

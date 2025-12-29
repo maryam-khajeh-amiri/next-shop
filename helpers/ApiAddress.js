@@ -5,7 +5,7 @@ const BASE_URL = "http://localhost:3000/products";
 
 
  export const getProduct=({currentPage= 1 , limit=10 , searchQuery=""} , token)=>{
-   return  axios.get(`${BASE_URL}?page=${currentPage}&limit=${limit}&search=${searchQuery}` ,
+   return  axios.get(`${BASE_URL}?page=${currentPage}&limit=${limit}&search=""` ,
     {headers:{Authorization:`Bearer ${token}`}})
   .then((res)=> res.data
   )

@@ -2,7 +2,7 @@ import { MdEdit} from "react-icons/md"
 import{ MdDelete} from "react-icons/md"
 import styles from "./Products.module.css"
 
-function Products({products,editModal,deleteModal}) {
+function Products({editModal,deleteModal,filteredProducts}) {
   return (
    <div className={styles.dashbord_table}>
             <table>
@@ -16,7 +16,7 @@ function Products({products,editModal,deleteModal}) {
                 </tr>
               </thead>
               <tbody>
-                {products.map((product)=>
+                {filteredProducts.map((product)=>
                  <tr key={product.id}>
                   <td>{product.name}</td>
                   <td>{product.quantity}</td>

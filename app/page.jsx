@@ -10,7 +10,7 @@ export default  async  function Home() {
 const res = await fetch(`${BASE_URL}` , {next :{revalidate :60}})
 const data = await res.json()
 const products = data.data || []
-console.log(data);
+
 
 
 
@@ -32,7 +32,7 @@ console.log(data);
              <td>{product.name}</td>
           <td>{product.quantity}</td>
             <td>{product.price}</td>
-            <td> <Link  href={`/products/${product.id}`}>  جزئیات </Link></td>
+            <td> <Link  href={`/products/${product.id}`}>  جزئیات محصول</Link></td>
                  
                
                </tr>

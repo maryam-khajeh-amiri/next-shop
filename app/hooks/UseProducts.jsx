@@ -16,9 +16,14 @@ setSearchQuery(e.target.value)
 setCurrentPage(1)
 }
 
+const filteredProducts = products.filter(p =>
+    p.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+
 
 useEffect(()=>{
-
+ if (!token) return; 
   setLoading(true)
 getProduct({currentPage ,limit , searchQuery} , token)
 .then((data)=>{
@@ -58,6 +63,7 @@ const deletedProductId=(deleteProduct)=>{
     totalPage,
     updateProductId,
     deletedProductId,
+    filteredProducts,
   }
     
   

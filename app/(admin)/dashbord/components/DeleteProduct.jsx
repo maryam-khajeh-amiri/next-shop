@@ -45,7 +45,7 @@ function DeletedProduct({deletedProductId}) {
       <div>
         <form onSubmit={handleSubmit(onsubmit)}>
         <button type='submit' className={styles.deletedButton} >حذف</button>
-        <button onClick={closeModal}>لغو</button>
+        <button  type='button' onClick={closeModal}>لغو</button>
         </form>
       </div>
       

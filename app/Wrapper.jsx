@@ -1,28 +1,30 @@
 "use client"
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext, useEffect, useState } from "react"
 
 
 
 export  const authUserContext= createContext()
 
-// import { authUserContext } from "@/context/AuthContext"
+
 
 function Wrapper({children}) {
-   const[isLogin,setIsLogin]=useState(()=>{
-    return(JSON.parse(localStorage.getItem("isLogin")) || false )
-})
+   const[isLogin,setIsLogin]=useState(false)
+   const[token,setToken]=useState("")
+     const [loading, setLoading] = useState(true)
 
-console.log(localStorage.getItem("isLogin"));
+useEffect(()=>{
+const savedLogin = localStorage.getItem("isLogin")
+const savedToken = localStorage.getItem("token")
 
+if (savedLogin === "true") {
+      setIsLogin(true)
+    }
 
-const[token,setToken]=useState(()=>{
-    return(localStorage.getItem("token") || "")
-})
-console.log(localStorage.getItem("token"));
-
-
-
-
+    if (savedToken) {
+      setToken(savedToken)
+    }
+  setIsLogin(false)
+},[])
 
 
    const login=(tokenValue)=>{
